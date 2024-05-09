@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e1012"
+    tools:context=".stopwatch">
+
+    <ImageView
+        android:id="@+id/stopWatchImg"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/stopwatch" />
+
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:format="00:00:00"
+        android:textSize="45dp"
+        android:textStyle="italic"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:id="@+id/listHold"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/stopWatchImg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/startStopBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/start"
+            android:backgroundTint="#0e1012"
+            android:layout_marginRight="40dp"/>
+
+        <ImageButton
+            android:id="@+id/holdResetBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/reset"
+            android:backgroundTint="#0e1012"
+            android:layout_marginLeft="40dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
